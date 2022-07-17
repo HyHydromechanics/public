@@ -6,20 +6,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>My New Hugo Site</title>
+<title>Blog</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://HyHydromechanics.github.io/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8b523f1730c922e314350296d83fd666efa16519ca136320a93df674d00b6325.css" integrity="sha256-i1I/FzDJIuMUNQKW2D/WZu&#43;hZRnKE2MgqT32dNALYyU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://HyHydromechanics.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://HyHydromechanics.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://HyHydromechanics.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://HyHydromechanics.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://HyHydromechanics.github.io/safari-pinned-tab.svg">
+<link rel="canonical" href="https://HyHydromechanics.github.io/public/">
+<link crossorigin="anonymous" href="/public/assets/css/stylesheet.8b523f1730c922e314350296d83fd666efa16519ca136320a93df674d00b6325.css" integrity="sha256-i1I/FzDJIuMUNQKW2D/WZu&#43;hZRnKE2MgqT32dNALYyU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://HyHydromechanics.github.io/public/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://HyHydromechanics.github.io/public/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://HyHydromechanics.github.io/public/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://HyHydromechanics.github.io/public/apple-touch-icon.png">
+<link rel="mask-icon" href="https://HyHydromechanics.github.io/public/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://HyHydromechanics.github.io/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://HyHydromechanics.github.io/public/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,23 +56,23 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="My New Hugo Site" />
+</noscript><meta property="og:title" content="Blog" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://HyHydromechanics.github.io/" />
+<meta property="og:url" content="https://HyHydromechanics.github.io/public/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My New Hugo Site"/>
+<meta name="twitter:title" content="Blog"/>
 <meta name="twitter:description" content=""/>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "My New Hugo Site",
-  "url": "https://HyHydromechanics.github.io",
+  "name": "Blog",
+  "url": "https://HyHydromechanics.github.io/public",
   "description": "",
-  "thumbnailUrl": "https://HyHydromechanics.github.io/favicon.ico",
+  "thumbnailUrl": "https://HyHydromechanics.github.io/public/favicon.ico",
   "sameAs": [
       
   ]
@@ -95,7 +95,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://HyHydromechanics.github.io" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <a href="https://HyHydromechanics.github.io/public" accesskey="h" title="Blog (Alt + H)">Blog</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -124,80 +124,10 @@
     </nav>
 </header>
 <main class="main"> 
-
-<article class="first-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://HyHydromechanics.github.io/%3Cimage%20path/url%3E" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>Hugo_Deploy
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Hugo博客的部署 这部分需要使用到一个叫做github page的东西，是GitHub提供的一个网页寄存服务，可以寄存静态页面，这个特性就特别适合博客的搭建。 首 - 先再Github上创建一个 Repository，命名为Github名字.http://github.io，譬如我的仓库caecarxu.github.io，这样就可以生成一个用户页面
-在hugo server调式页面完成后，使用命令hugo生成hugo静态页面。 baseURL = &#34;https://caecarxu.github.io/&#34; hugo 在命令执行后，出现一个public文件夹，里面就是网站的静态页面文件
-进入public文件夹，使用git上传文件
-cd public git init ##初始化仓库 git remote add origin https://github.com/&lt;你的用户名&gt;/&lt;你的仓库名字&gt;.git ##链接远程仓库 git add . git commit -m &#34;first commit&#34; git push -u origin master 在此之后更新文章，使用hugo生成新的静态页面，并使用git push进行同步 cd public git add . git status git commit -m &#34;你想提交的信息&#34; git push 或者 hugo --theme=PaperMod --baseUrl=&#34;https://HyHydromechanics.github.io&#34; --buildDrafts 在创建public文件夹后:
-进入public文件夹: git init git add . git commit -m “aggdwyf” git remote add origin https://github....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-07-15 18:05:48 +0800 CST'>July 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;86 words&nbsp;·&nbsp;Me</footer>
-  <a class="entry-link" aria-label="post link to Hugo_Deploy" href="https://HyHydromechanics.github.io/post/hugo_deploy/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://HyHydromechanics.github.io/%3Cimage%20path/url%3E" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>Hugo的创建
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Hugo Blog 创建 下载: 这里用mac做例子, 使用来进行下载
-brew install hugo brew的具体下载可以看另外一篇文章
-Hugo官网: https://www.gohugo.cn/
-windows可以直接去官网下载安装包
-安装结束后输入:
-hugo version 如果返回:
-hugo v0.101.0&#43;extended darwin/arm64 BuildDate=unknown # 版本号不一样没事 则安装完成
-初始化blog site 终端中输入:
-hugo new site &lt;name of your blog&gt; 此时进入blog根目录, 可以看到以及生产了部分文件夹:
-添加主题: 访问themes.gohugo.io来获取并查看可用的主题列表 (笔者使用的是papermode主题) 每个主题都写好了对应的安装步骤, 对应步骤一步一步来就好(需要使用git来clone主题包) 随后, 在config.yml中添加主题的配置信息: theme = &lt;your theme&gt; 填写内容 你可以在content中自己创建markdown文件并且自行加入metadata来工作, 但是笔者在这里更推荐使用new命令来辅助
-hugo new posts/your-fist-post.md 新创建的文件会自动带上标题, 日期, 以及draft的true/false
-启动服务器 hugo sever -t &lt;your-theme-name&gt; --buildDrafts 随后, 你就可以去https://localhosts:1313来访问你的博客了
-自定义主题文件: 根据自己的需求更改config.yml文件 这里大家就按照自己的喜好来随便更改啦</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-07-15 17:43:21 +0800 CST'>July 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;67 words&nbsp;·&nbsp;Me</footer>
-  <a class="entry-link" aria-label="post link to Hugo的创建" href="https://HyHydromechanics.github.io/post/hugo_start/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://HyHydromechanics.github.io/%3Cimage%20path/url%3E" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>Brew的下载
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Brew的下载与配置 Homebrew国内源 知乎文章地址：https://zhuanlan.zhihu.com/p/111014448
-苹果电脑标准安装脚本：（推荐 优点全面 缺点慢一点）
-/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34; 苹果电脑极速安装脚本：（优点安装速度快 缺点update功能需要命令修复 ）
-/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34; speed Linux 标准安装脚本：
-rm Homebrew.sh ; wget https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh ; bash Homebrew.sh 苹果电脑卸载脚本：
-/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)&#34; Linux卸载脚本：
-rm HomebrewUninstall.sh ; wget https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh ; bash HomebrewUninstall.sh —Brew介绍
-macOS 和 Linux 缺失软件包的管理器
-—Homebrew 能干什么?
-使用 Homebrew 安装 Mac（或Linux）没有预装但你需要的东西。
-–Homebrew自身如何使用
-知道软件包具体名称，直接 brew install 软件包名 只知道一小部分名称，用 brew search 小部分名称 查询即可 例如brew search chrome就会把带chrome的软件包全部列出
-如果遇见任何问题, 直接卸载后重新安装, 大概率是之前安装的缓冲与现在安装的相互影响</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-07-15 16:25:03 +0800 CST'>July 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;72 words&nbsp;·&nbsp;Me</footer>
-  <a class="entry-link" aria-label="post link to Brew的下载" href="https://HyHydromechanics.github.io/post/brew-install/"></a>
-</article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://HyHydromechanics.github.io">My New Hugo Site</a></span>
+    <span>&copy; 2022 <a href="https://HyHydromechanics.github.io/public">Blog</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

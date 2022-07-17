@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hugo的创建 | Blog</title>
+<meta name="keywords" content="blog">
+<meta name="description" content="Blog set up">
+<meta name="author" content="Me">
+<link rel="canonical" href="https://canonical.url/to/page">
+<link crossorigin="anonymous" href="/public/assets/css/stylesheet.8b523f1730c922e314350296d83fd666efa16519ca136320a93df674d00b6325.css" integrity="sha256-i1I/FzDJIuMUNQKW2D/WZu&#43;hZRnKE2MgqT32dNALYyU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/public/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://HyHydromechanics.github.io/public/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://HyHydromechanics.github.io/public/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://HyHydromechanics.github.io/public/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://HyHydromechanics.github.io/public/apple-touch-icon.png">
+<link rel="mask-icon" href="https://HyHydromechanics.github.io/public/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Hugo的创建" />
+<meta property="og:description" content="Blog set up" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HyHydromechanics.github.io/public/hugo_start/" />
+<meta property="og:image" content="https://HyHydromechanics.github.io/public/%3Cimage%20path/url%3E" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2022-07-15T17:43:21&#43;08:00" />
+<meta property="article:modified_time" content="2022-07-15T17:43:21&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://HyHydromechanics.github.io/public/%3Cimage%20path/url%3E" />
+<meta name="twitter:title" content="Hugo的创建"/>
+<meta name="twitter:description" content="Blog set up"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Hugo的创建",
+      "item": "https://HyHydromechanics.github.io/public/hugo_start/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo的创建",
+  "name": "Hugo的创建",
+  "description": "Blog set up",
+  "keywords": [
+    "blog"
+  ],
+  "articleBody": "Hugo Blog 创建 下载: 这里用mac做例子, 使用来进行下载\nbrew install hugo brew的具体下载可以看另外一篇文章\nHugo官网: https://www.gohugo.cn/\nwindows可以直接去官网下载安装包\n安装结束后输入:\nhugo version 如果返回:\nhugo v0.101.0+extended darwin/arm64 BuildDate=unknown # 版本号不一样没事 则安装完成\n初始化blog site 终端中输入:\nhugo new site 此时进入blog根目录, 可以看到以及生产了部分文件夹:\n添加主题: 访问themes.gohugo.io来获取并查看可用的主题列表 (笔者使用的是papermode主题) 每个主题都写好了对应的安装步骤, 对应步骤一步一步来就好(需要使用git来clone主题包) 随后, 在config.yml中添加主题的配置信息: theme = 填写内容 你可以在content中自己创建markdown文件并且自行加入metadata来工作, 但是笔者在这里更推荐使用new命令来辅助\nhugo new posts/your-fist-post.md 新创建的文件会自动带上标题, 日期, 以及draft的true/false\n启动服务器 hugo server -t papermod --buildDrafts 随后, 你就可以去https://localhosts:1313来访问你的博客了\n完成Draft构建 hugo --theme=PaperMod --baseUrl=\"https://HyHydromechanics.github.io\" --buildDrafts 自定义主题文件: 根据自己的需求更改config.yml文件 这里大家就按照自己的喜好来随便更改啦\n",
+  "wordCount" : "72",
+  "inLanguage": "en",
+  "image":"https://HyHydromechanics.github.io/public/%3Cimage%20path/url%3E","datePublished": "2022-07-15T17:43:21+08:00",
+  "dateModified": "2022-07-15T17:43:21+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Me"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://HyHydromechanics.github.io/public/hugo_start/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://HyHydromechanics.github.io/public/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://HyHydromechanics.github.io/public" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://HyHydromechanics.github.io/public">Home</a></div>
+    <h1 class="post-title">
+      Hugo的创建
+    </h1>
+    <div class="post-description">
+      Blog set up
+    </div>
+    <div class="post-meta"><span title='2022-07-15 17:43:21 +0800 CST'>July 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;72 words&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href="https://github.com/%3cpath_to_repo%3e/content/Hugo_start.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#下载">下载:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="hugo-blog-创建"><strong>Hugo Blog 创建</strong><a hidden class="anchor" aria-hidden="true" href="#hugo-blog-创建">#</a></h1>
+<h3 id="下载">下载:<a hidden class="anchor" aria-hidden="true" href="#下载">#</a></h3>
+<p>这里用mac做例子, 使用来进行下载</p>
+<pre tabindex="0"><code class="language-dos" data-lang="dos">brew install hugo
+</code></pre><blockquote>
+<p>brew的具体下载可以看另外一篇文章</p>
+</blockquote>
+<p>Hugo官网: <a href="https://www.gohugo.cn/">https://www.gohugo.cn/</a></p>
+<blockquote>
+<p>windows可以直接去官网下载安装包</p>
+</blockquote>
+<p>安装结束后输入:</p>
+<pre tabindex="0"><code class="language-dos" data-lang="dos">hugo version
+</code></pre><p>如果返回:</p>
+<pre tabindex="0"><code class="language-dos" data-lang="dos">hugo v0.101.0+extended darwin/arm64 BuildDate=unknown
+# 版本号不一样没事
+</code></pre><p>则安装完成</p>
+<h1 id="初始化blog-site">初始化blog site<a hidden class="anchor" aria-hidden="true" href="#初始化blog-site">#</a></h1>
+<p>终端中输入:</p>
+<pre tabindex="0"><code class="language-dos" data-lang="dos">hugo new site &lt;name of your blog&gt;
+</code></pre><p>此时进入blog根目录, 可以看到以及生产了部分文件夹:</p>
+<p><img loading="lazy" src="./pic/%E6%88%AA%E5%B1%8F2022-07-15%2017.50.29.png" alt="截屏2022-07-15 17.50.29"  />
+</p>
+<h1 id="添加主题">添加主题:<a hidden class="anchor" aria-hidden="true" href="#添加主题">#</a></h1>
+<ol>
+<li>访问<a href="https://themes.gohugo.io">themes.gohugo.io</a>来获取并查看可用的主题列表 (笔者使用的是papermode主题)</li>
+<li>每个主题都写好了对应的安装步骤, 对应步骤一步一步来就好(需要使用git来clone主题包)</li>
+<li>随后, 在<code>config.yml</code>中添加主题的配置信息:</li>
+</ol>
+<pre tabindex="0"><code>theme = &lt;your theme&gt;
+</code></pre><h1 id="填写内容">填写内容<a hidden class="anchor" aria-hidden="true" href="#填写内容">#</a></h1>
+<p>你可以在content中自己创建markdown文件并且自行加入metadata来工作, 但是笔者在这里更推荐使用new命令来辅助</p>
+<pre tabindex="0"><code class="language-dos" data-lang="dos">hugo new posts/your-fist-post.md
+</code></pre><p>新创建的文件会自动带上标题, 日期, 以及draft的true/false</p>
+<h1 id="启动服务器">启动服务器<a hidden class="anchor" aria-hidden="true" href="#启动服务器">#</a></h1>
+<pre tabindex="0"><code class="language-dos" data-lang="dos">hugo server -t papermod --buildDrafts
+</code></pre><p>随后, 你就可以去<a href="https://localhosts:1313">https://localhosts:1313</a>来访问你的博客了</p>
+<h1 id="完成draft构建">完成Draft构建<a hidden class="anchor" aria-hidden="true" href="#完成draft构建">#</a></h1>
+<pre tabindex="0"><code>hugo --theme=PaperMod --baseUrl=&#34;https://HyHydromechanics.github.io&#34; --buildDrafts
+</code></pre><h1 id="自定义主题文件">自定义主题文件:<a hidden class="anchor" aria-hidden="true" href="#自定义主题文件">#</a></h1>
+<p>根据自己的需求更改config.yml文件
+这里大家就按照自己的喜好来随便更改啦</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://HyHydromechanics.github.io/public/tags/blog/">blog</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://HyHydromechanics.github.io/public">Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>blog on My New Hugo Site</title>
-    <link>https://HyHydromechanics.github.io/tags/blog/</link>
-    <description>Recent content in blog on My New Hugo Site</description>
+    <title>blog on Blog</title>
+    <link>https://HyHydromechanics.github.io/public/tags/blog/</link>
+    <description>Recent content in blog on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jul 2022 18:05:48 +0800</lastBuildDate><atom:link href="https://HyHydromechanics.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 18:05:48 +0800</lastBuildDate><atom:link href="https://HyHydromechanics.github.io/public/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo_Deploy</title>
-      <link>https://HyHydromechanics.github.io/post/hugo_deploy/</link>
+      <link>https://HyHydromechanics.github.io/public/hugo_deploy/</link>
       <pubDate>Fri, 15 Jul 2022 18:05:48 +0800</pubDate>
       
-      <guid>https://HyHydromechanics.github.io/post/hugo_deploy/</guid>
+      <guid>https://HyHydromechanics.github.io/public/hugo_deploy/</guid>
       <description>Blog set up</description>
     </item>
     
     <item>
       <title>Hugo的创建</title>
-      <link>https://HyHydromechanics.github.io/post/hugo_start/</link>
+      <link>https://HyHydromechanics.github.io/public/hugo_start/</link>
       <pubDate>Fri, 15 Jul 2022 17:43:21 +0800</pubDate>
       
-      <guid>https://HyHydromechanics.github.io/post/hugo_start/</guid>
+      <guid>https://HyHydromechanics.github.io/public/hugo_start/</guid>
       <description>Blog set up</description>
     </item>
     
