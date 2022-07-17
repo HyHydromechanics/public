@@ -10,14 +10,14 @@
 <meta name="description" content="Blog set up">
 <meta name="author" content="Me">
 <link rel="canonical" href="https://canonical.url/to/page">
-<link crossorigin="anonymous" href="/public/assets/css/stylesheet.8b523f1730c922e314350296d83fd666efa16519ca136320a93df674d00b6325.css" integrity="sha256-i1I/FzDJIuMUNQKW2D/WZu&#43;hZRnKE2MgqT32dNALYyU=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/public/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8b523f1730c922e314350296d83fd666efa16519ca136320a93df674d00b6325.css" integrity="sha256-i1I/FzDJIuMUNQKW2D/WZu&#43;hZRnKE2MgqT32dNALYyU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://HyHydromechanics.github.io/public/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://HyHydromechanics.github.io/public/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://HyHydromechanics.github.io/public/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://HyHydromechanics.github.io/public/apple-touch-icon.png">
-<link rel="mask-icon" href="https://HyHydromechanics.github.io/public/safari-pinned-tab.svg">
+<link rel="icon" href="https://HyHydromechanics.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://HyHydromechanics.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://HyHydromechanics.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://HyHydromechanics.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://HyHydromechanics.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -59,13 +59,13 @@
 </noscript><meta property="og:title" content="Hugo的创建" />
 <meta property="og:description" content="Blog set up" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://HyHydromechanics.github.io/public/post/hugo_start/" />
-<meta property="og:image" content="https://HyHydromechanics.github.io/public/%3Cimage%20path/url%3E" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://HyHydromechanics.github.io/post/hugo_start/" />
+<meta property="og:image" content="https://HyHydromechanics.github.io/%3Cimage%20path/url%3E" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-07-15T17:43:21&#43;08:00" />
 <meta property="article:modified_time" content="2022-07-15T17:43:21&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://HyHydromechanics.github.io/public/%3Cimage%20path/url%3E" />
+<meta name="twitter:image" content="https://HyHydromechanics.github.io/%3Cimage%20path/url%3E" />
 <meta name="twitter:title" content="Hugo的创建"/>
 <meta name="twitter:description" content="Blog set up"/>
 
@@ -79,13 +79,13 @@
       "@type": "ListItem",
       "position":  2 ,
       "name": "Posts",
-      "item": "https://HyHydromechanics.github.io/public/post/"
+      "item": "https://HyHydromechanics.github.io/post/"
     }, 
     {
       "@type": "ListItem",
       "position":  3 ,
       "name": "Hugo的创建",
-      "item": "https://HyHydromechanics.github.io/public/post/hugo_start/"
+      "item": "https://HyHydromechanics.github.io/post/hugo_start/"
     }
   ]
 }
@@ -103,7 +103,7 @@
   "articleBody": "Hugo Blog 创建 下载: 这里用mac做例子, 使用来进行下载\nbrew install hugo brew的具体下载可以看另外一篇文章\nHugo官网: https://www.gohugo.cn/\nwindows可以直接去官网下载安装包\n安装结束后输入:\nhugo version 如果返回:\nhugo v0.101.0+extended darwin/arm64 BuildDate=unknown # 版本号不一样没事 则安装完成\n初始化blog site 终端中输入:\nhugo new site 此时进入blog根目录, 可以看到以及生产了部分文件夹:\n添加主题: 访问themes.gohugo.io来获取并查看可用的主题列表 (笔者使用的是papermode主题) 每个主题都写好了对应的安装步骤, 对应步骤一步一步来就好(需要使用git来clone主题包) 随后, 在config.yml中添加主题的配置信息: theme = 填写内容 你可以在content中自己创建markdown文件并且自行加入metadata来工作, 但是笔者在这里更推荐使用new命令来辅助\nhugo new posts/your-fist-post.md 新创建的文件会自动带上标题, 日期, 以及draft的true/false\n启动服务器 hugo sever -t --buildDrafts 随后, 你就可以去https://localhosts:1313来访问你的博客了\n自定义主题文件: 根据自己的需求更改config.yml文件 这里大家就按照自己的喜好来随便更改啦\n",
   "wordCount" : "67",
   "inLanguage": "en",
-  "image":"https://HyHydromechanics.github.io/public/%3Cimage%20path/url%3E","datePublished": "2022-07-15T17:43:21+08:00",
+  "image":"https://HyHydromechanics.github.io/%3Cimage%20path/url%3E","datePublished": "2022-07-15T17:43:21+08:00",
   "dateModified": "2022-07-15T17:43:21+08:00",
   "author":{
     "@type": "Person",
@@ -111,14 +111,14 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://HyHydromechanics.github.io/public/post/hugo_start/"
+    "@id": "https://HyHydromechanics.github.io/post/hugo_start/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "My New Hugo Site",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://HyHydromechanics.github.io/public/favicon.ico"
+      "url": "https://HyHydromechanics.github.io/favicon.ico"
     }
   }
 }
@@ -140,7 +140,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://HyHydromechanics.github.io/public" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <a href="https://HyHydromechanics.github.io" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -172,7 +172,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://HyHydromechanics.github.io/public">Home</a>&nbsp;»&nbsp;<a href="https://HyHydromechanics.github.io/public/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://HyHydromechanics.github.io">Home</a>&nbsp;»&nbsp;<a href="https://HyHydromechanics.github.io/post/">Posts</a></div>
     <h1 class="post-title">
       Hugo的创建
     </h1>
@@ -247,15 +247,15 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://HyHydromechanics.github.io/public/tags/blog/">blog</a></li>
+      <li><a href="https://HyHydromechanics.github.io/tags/blog/">blog</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://HyHydromechanics.github.io/public/post/hugo_deploy/">
+  <a class="prev" href="https://HyHydromechanics.github.io/post/hugo_deploy/">
     <span class="title">« Prev</span>
     <br>
     <span>Hugo_Deploy</span>
   </a>
-  <a class="next" href="https://HyHydromechanics.github.io/public/post/brew-install/">
+  <a class="next" href="https://HyHydromechanics.github.io/post/brew-install/">
     <span class="title">Next »</span>
     <br>
     <span>Brew的下载</span>
@@ -267,7 +267,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://HyHydromechanics.github.io/public">My New Hugo Site</a></span>
+    <span>&copy; 2022 <a href="https://HyHydromechanics.github.io">My New Hugo Site</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

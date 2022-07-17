@@ -1,65 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/post/</link>
+    <link>https://HyHydromechanics.github.io/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jul 2022 18:05:48 +0800</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 18:05:48 +0800</lastBuildDate><atom:link href="https://HyHydromechanics.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo_Deploy</title>
-      <link>http://example.org/post/hugo_deploy/</link>
+      <link>https://HyHydromechanics.github.io/post/hugo_deploy/</link>
       <pubDate>Fri, 15 Jul 2022 18:05:48 +0800</pubDate>
       
-      <guid>http://example.org/post/hugo_deploy/</guid>
-      <description>Hugo博客的部署 这部分需要使用到一个叫做github page的东西，是GitHub提供的一个网页寄存服务，可以寄存静态页面，这个特性就特别适合博客的搭建。 首 - 先再Github上创建一个 Repository，命名为Github名字.http://github.io，譬如我的仓库caecarxu.github.io，这样就可以生成一个用户页面
-在hugo server调式页面完成后，使用命令hugo生成hugo静态页面。 baseURL = &amp;#34;https://caecarxu.github.io/&amp;#34; hugo 在命令执行后，出现一个public文件夹，里面就是网站的静态页面文件
-进入public文件夹，使用git上传文件
-cd public git init ##初始化仓库 git remote add origin https://github.com/&amp;lt;你的用户名&amp;gt;/&amp;lt;你的仓库名字&amp;gt;.git ##链接远程仓库 git add . git commit -m &amp;#34;first commit&amp;#34; git push -u origin master 在此之后更新文章，使用hugo生成新的静态页面，并使用git push进行同步 cd public git add . git status git commit -m &amp;#34;你想提交的信息&amp;#34; git push 或者 hugo --theme=PaperMod --baseUrl=&amp;#34;https://HyHydromechanics.github.io&amp;#34; --buildDrafts 在创建public文件夹后:
-进入public文件夹: git init git add . git commit -m &amp;ldquo;aggdwyf&amp;rdquo; git remote add origin https://github.</description>
+      <guid>https://HyHydromechanics.github.io/post/hugo_deploy/</guid>
+      <description>Blog set up</description>
     </item>
     
     <item>
       <title>Hugo的创建</title>
-      <link>http://example.org/post/hugo_start/</link>
+      <link>https://HyHydromechanics.github.io/post/hugo_start/</link>
       <pubDate>Fri, 15 Jul 2022 17:43:21 +0800</pubDate>
       
-      <guid>http://example.org/post/hugo_start/</guid>
-      <description>Hugo Blog 创建 下载: 这里用mac做例子, 使用来进行下载
-brew install hugo brew的具体下载可以看另外一篇文章
-Hugo官网: https://www.gohugo.cn/
-windows可以直接去官网下载安装包
-安装结束后输入:
-hugo version 如果返回:
-hugo v0.101.0+extended darwin/arm64 BuildDate=unknown # 版本号不一样没事 则安装完成
-初始化blog site 终端中输入:
-hugo new site &amp;lt;name of your blog&amp;gt; 此时进入blog根目录, 可以看到以及生产了部分文件夹:
-添加主题: 访问themes.gohugo.io来获取并查看可用的主题列表 (笔者使用的是papermode主题) 每个主题都写好了对应的安装步骤, 对应步骤一步一步来就好(需要使用git来clone主题包) 随后, 在config.yml中添加主题的配置信息: theme = &amp;lt;your theme&amp;gt; 填写内容 你可以在content中自己创建markdown文件并且自行加入metadata来工作, 但是笔者在这里更推荐使用new命令来辅助
-hugo new posts/your-fist-post.md 新创建的文件会自动带上标题, 日期, 以及draft的true/false
-启动服务器 hugo sever -t &amp;lt;your-theme-name&amp;gt; --buildDrafts 随后, 你就可以去https://localhosts:1313来访问你的博客了
-自定义主题文件: 根据自己的需求更改config.yml文件 这里大家就按照自己的喜好来随便更改啦</description>
+      <guid>https://HyHydromechanics.github.io/post/hugo_start/</guid>
+      <description>Blog set up</description>
     </item>
     
     <item>
       <title>Brew的下载</title>
-      <link>http://example.org/post/brew-install/</link>
+      <link>https://HyHydromechanics.github.io/post/brew-install/</link>
       <pubDate>Fri, 15 Jul 2022 16:25:03 +0800</pubDate>
       
-      <guid>http://example.org/post/brew-install/</guid>
-      <description>Brew的下载与配置 Homebrew国内源 知乎文章地址：https://zhuanlan.zhihu.com/p/111014448
-苹果电脑标准安装脚本：（推荐 优点全面 缺点慢一点）
-/bin/zsh -c &amp;#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&amp;#34; 苹果电脑极速安装脚本：（优点安装速度快 缺点update功能需要命令修复 ）
-/bin/zsh -c &amp;#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&amp;#34; speed Linux 标准安装脚本：
-rm Homebrew.sh ; wget https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh ; bash Homebrew.sh 苹果电脑卸载脚本：
-/bin/zsh -c &amp;#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)&amp;#34; Linux卸载脚本：
-rm HomebrewUninstall.sh ; wget https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh ; bash HomebrewUninstall.sh &amp;mdash;Brew介绍
-macOS 和 Linux 缺失软件包的管理器
-&amp;mdash;Homebrew 能干什么?
-使用 Homebrew 安装 Mac（或Linux）没有预装但你需要的东西。
-&amp;ndash;Homebrew自身如何使用
-知道软件包具体名称，直接 brew install 软件包名 只知道一小部分名称，用 brew search 小部分名称 查询即可 例如brew search chrome就会把带chrome的软件包全部列出
-如果遇见任何问题, 直接卸载后重新安装, 大概率是之前安装的缓冲与现在安装的相互影响</description>
+      <guid>https://HyHydromechanics.github.io/post/brew-install/</guid>
+      <description>brew installation</description>
     </item>
     
   </channel>
